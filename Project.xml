@@ -127,7 +127,6 @@
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
-	<haxelib name="extension-videoview" if="android"/>
 	<haxelib name="extension-androidtools" if="android"/>
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="polymod"/>
