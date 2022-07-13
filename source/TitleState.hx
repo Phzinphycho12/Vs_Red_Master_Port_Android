@@ -29,7 +29,7 @@ import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 
-#if windows
+#if desktop
 import Discord.DiscordClient;
 #end
 
@@ -56,12 +56,12 @@ class TitleState extends MusicBeatState
 	override public function create():Void
 	{
 		#if polymod
-		//polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
+		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
 		#end
 		
 		#if sys
-		if (!sys.FileSystem.exists(Sys.getCwd() + "/assets/replays"))
-			sys.FileSystem.createDirectory(Sys.getCwd() + "/assets/replays");
+		if (!sys.FileSystem.exists(SUtil.getPath() + Sys.getCwd() + "/assets/replays"))
+			sys.FileSystem.createDirectory(SUtil.getPath() + Sys.getCwd() + "/assets/replays");
 		#end
 
 		@:privateAccess
