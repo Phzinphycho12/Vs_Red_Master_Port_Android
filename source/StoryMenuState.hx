@@ -1,4 +1,4 @@
-,package;
+package;
 
 import flixel.input.gamepad.FlxGamepad;
 import flixel.FlxG;
