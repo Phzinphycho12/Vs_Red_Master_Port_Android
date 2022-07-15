@@ -3614,7 +3614,7 @@ androidc.visible = true;
 							goodNoteHit(daNote);
 					});
 				}
-		 {
+		 
 					// PRESSES, check for note hits
 					if (pressArray.contains(true) && generatedMusic)
 					{
