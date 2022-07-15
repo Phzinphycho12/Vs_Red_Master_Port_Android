@@ -18,9 +18,7 @@ import lime.net.curl.CURLCode;
 import Discord.DiscordClient;
 #end
 
-#if android
-addVirtualPad(FULL, A_B);
-#end
+
 using StringTools;
 
 class StoryMenuState extends MusicBeatState
@@ -181,7 +179,9 @@ class StoryMenuState extends MusicBeatState
 		updateText();
 
 		trace("Line 165");
-
+                #if android
+addVirtualPad(FULL, A_B);
+#end
 		super.create();
 	}
 
